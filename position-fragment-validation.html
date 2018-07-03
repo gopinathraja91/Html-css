@@ -1,0 +1,88 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Positioning , website Freagment & validation </title>
+    <meta charset="utf-8" />
+    <style>
+         h1{
+                font-size: 40px;
+                font-family: 'Courier New', Courier, monospace;
+                margin-top: 10px;
+                letter-spacing: 2px;
+                color: black;
+                text-transform: uppercase;
+                text-shadow: 0px 3px 6px red;
+         }
+         article img{
+             float:left
+         }
+         .prev{
+             float:right;
+             width: 400px;
+         }
+         article{
+             width:700px;
+             margin:auto;
+         }
+         .prev li{
+             display: inline;         
+         }
+         .prev li a{
+             text-decoration:none;   
+             color:#2196f3c9;    
+         }
+         .prev li a:hover{
+             text-decoration:underline;       
+         }
+         .prev li:last-child a:after{
+             content: none;
+             padding-left:3px;
+         }
+         .prev li a:after{
+             content:"\\";
+             padding-left:3px;
+         }
+         .prev ul{
+            padding:0;      
+         }
+         .stsrf{
+             background:#dcdada;
+             float:left;
+         }
+         .contbody{
+            clear:both;
+         }
+         .continue{
+             float:right
+         }
+    </style>
+</head>
+<body>
+
+    <h1>Test Image</h1>
+
+    <article>
+        <h3>Article</h3>
+        <a href=""><img src="timg.jpg" alt="image"/></a>
+        <div class="prev">
+            <ul>
+                <li><a href="">Web Development</a></li>
+                <li><a href="">Chess</a></li>
+                <li><a href="">Reading</a></li>
+                <li><a href="">Learning</a></li>
+            </ul>
+            <h3>Favorite Quotes</h3>
+            <div>
+                <p class="stsrf"><a href=""> Manohar</a> on aug24rd 2018 with <a href="">22 comments</a> </p>
+            </div>
+            <div class="contbody">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. </p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam</p>
+            </div>
+            <a href="" class="continue">Contnue</a>
+        </div>
+    </article>
+</body>
+
+
+</html>
