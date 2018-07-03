@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Float,Navigation Menus and Forms   </title>
+        <meta charset="utf-8" />
+        
+        <style>
+        
+            .wrap{
+                width:600px;
+                margin:auto;
+                min-width: 600px;
+                background:green;
+                overflow: hidden;
+            }
+            .content{
+
+            background:red;  
+            float:left;
+            width:70%
+
+            }
+            .content,aside{
+                height:500px
+            }
+            aside{
+
+                background:yellow;
+                float:left;
+                width:30%;
+            }
+        .menu li{
+            display: inline;
+            }
+            .menu{
+                background: #9ac5e6;
+                border-radius: 5px;
+                height: 30px;
+            }
+            .menu ul{
+                padding: 8px;
+            }
+            }
+            li a{
+                text-decoration: none;
+            }
+            li a:hover {
+                text-decoration: underline;
+                font-size:20px;
+            }
+            .content li{
+                list-style: none;
+                padding-bottom:10px
+            }
+            .content ul{
+                margin:0;
+                padding: 8px;
+            }
+            form{
+                border:1px solid black;
+                margin: 12px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+                <ul>
+                    <li> <a href="">Web Development</a></li>
+                    <li><a href="">Chess</a></li>
+                    <li><a href="">Reading</a></li>
+                    <li><a href="">Learning</a></li>
+                </ul>
+            
+        </div>
+        <div class="wrap">
+                <h1>My Second Website</h1>   
+            <div class="content">            
+                <p>Welcome to my Website!Here are some things i enjoy</p>
+                <form action="" method="">
+                <h5>Form - Details</h5>
+                    <ul>
+                        <li>
+                            <label for="name">Enter Name:</label>
+                            <input type="text" id="name" name="name">
+                        </li>
+                        <li>
+                            <lable for="comments">Enter your Feedback</lable>
+                            <textarea id="comments" name="comments"></textarea>
+                        </li>
+                        <li>
+                                <lable for="comments">do you agree</lable>
+                                <input type="checkbox" name="dff">
+                            </li>
+                        <li>
+                            <input type="submit" name="Go">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <aside>
+                <h1>Sidebar</h1>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Chess</li>
+                    <li>Reading</li>
+                    <li>Learning</li>
+                </ul>
+            </aside>
+        </div>    
+    </body>
+</html>
