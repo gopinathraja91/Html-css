@@ -1,110 +1,295 @@
 <!Doctype html>
 <html>
-<head>
-<title>Business Website</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/960_12_col.css">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/text.css">
-<style>
-    .wrap header{
+    <head>
+      <title>Business Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        background:#8aa420;
-        height: 70px;
-    }
-   
-    header li{
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+        <style>
+            body {
+                font-family: 'Varela';font-size: 16px;
+                background: #f5f5f5;
+            }
+        
+            .social-links{
+                margin-top:30px;        
+                color:white;    
+            }
 
-        text-decoration: none;
-        list-style: none;
-        display:inline;
-        color:white;       
-    }
-    header li a{
-        color: red;
-        text-decoration: none;
-        text-transform: none;
-        font-weight: bold;
-    }
-    header li a:hover{
+            .flex-nav ul{
+                list-style:none;
+                margin-right: 40px;
+                justify-content:flex-end;
 
-        color:red;
-        text-decoration:underline;
-        text-transform: none;
-    }
-    .footerinfo{
-        height: 100px;
-        background: grey;
-        border-radius: 6px;
-    }
+            }
+            .flex-nav li{
+               
+                margin-left: 40px;
+                
+            }
 
-    .teamimg{
-        width: 990px;
-    }
+            .flex-cont,.flex-nav ul,.flex-footer{
+                display:flex;
+                
+            }
+            .flex-cont div{
 
-</style>
-</head>
-<body>
-    <div class="wrap container_12">
-        <header>
-            <h1 class="grid_4">Welcome ....</h1>
-            <nav class="grid_8 omega">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="main clearfix">
-            <div class="grid_4">
-                <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh. Proin efficitur nisl felis, vitae finibus diam euismod nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                </p>
-            </div>
-            <div class="grid_4">
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh. Proin efficitur nisl felis, vitae finibus diam euismod nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    </p>
-            </div>
-            <div class="grid_4">
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh. Proin efficitur nisl felis, vitae finibus diam euismod nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    </p>
-            </div>
+                flex:1 1 30%;
+                padding: 3px;
+            }
 
-        </div>
-        <div class="main clearfix">
-                <div class="grid_12">
-                    <h3>Teamwork</h3>
-                    <img class="teamimg" src="img/business-team.jpg" />
-                </div>
-                <div class="grid_4">
-                        <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh. Proin efficitur nisl felis, vitae finibus diam euismod nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        </p>
-                </div>
-                <div class="grid_4">
-                        <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh. Proin efficitur nisl felis, vitae finibus diam euismod nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        </p>
-                </div>
+            .box-five{
+
+                flex:10;
+            }
+            .flex-footer div{
+
+                flex:1;
+            }
+            .fab,.fas{
+                font-size: 30px;   
+                margin-left:5px;     
+             }
+            .fab:hover,.fas:hover{
+                font-size:30px;  
+                color:#1f3de6;;
+            }
+            .social-icons{
+                margin-top:20px;        
+            }
+            .flex-nav ul a{
+
+                color:white;
+                text-decoration:none;
+            }
+            .flex-nav ul a:hover{
+                text-decoration:underline;
+                color:red;
+            }
+
+
+        
+            .wrapper{
+                max-width:1000px;
+                margin:auto;
+            }
+            header{
+                background:#262a2d;
+                color:white;
+                border-radius:4px;
+                position: fixed;
+                top: 0;
+                width: 1000px;
+            }
+            .footerinfo{
+                height: auto;
+                background: #262a2d;
+                border-radius: 6px;
+            }
+
+            .colimg{
+                width: 100%;
+                height: 380px;
+            }
+            .enqbtn{
+                    width: 200px;
+                    height: 50px;
+                    border-radius: 40px;
+                    border: 1px solid grey;
+                    position: relative;
+                    top: 70px;
+            }
+
+            .sc-details ul,.box-six ul{
+
+                list-style: none;
+
+            }
+            .sc-details a{
+
+                 color:white;    
+                 text-decoration: none;
+            }
+            .sc-details a:hover{
+
+                color:red;    
+                text-decoration: underline;
+            }
+            .morebtn{
+                width: 80px;
+                height: 30px;
+                border-radius: 8px;
+                box-shadow: 2px 2px 2px #d2d1d1;
+            }
+            .news-img{
+                width: 90%;
+                height: 130px;
+            }
+            .main{
+
+                margin-top:123px;
+            }
+            .enq .enqbox{
+                position: relative;
+                top: 60px;
+                padding-right: 10px;
+                margin-left: -30px;
+                color: white;
+            }
+            .enq .enqbox input{
+                margin-left: 10px;
+                height: 25px;
+            }
+            .box-six{
+                color: red;
+                text-shadow: 1px 2px 3px #656363;
+            }
+            .box-six li a{
+                margin-left:5px;
+            }
+
+            
+
+            @media all and (max-width:1000px){
+                .flex-nav ul,.flex-cont,.flex-footer{
+                    flex-wrap:wrap;
+                }
+            
+                .flex-nav ul li{
+                    flex:1 1 40%;       
+                 } 
+                
+                .flex-cont div,.flex-footer div{
+                    flex:1 1 40%;       
+                 } 
+
+                 header{
+
+                     width:98%;
+                }
+
+
+            }
+
+
+
+
+
+
+            @media all and (max-width:600px){
+                .flex-nav ul,.flex-cont,.flex-footer{
+                    flex-wrap:wrap;
+                }
+            
+                .flex-nav ul li, .flex-cont div,.flex-footer div{
+                    flex:1 1 100%;
+                } 
+               .footerinfo,.flex-nav{
+
+                   text-align: center;
+               }
+               header{
+
+                   width:97%;
+               }
+                           
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1 class="">Welcome ....</h1>
+                <nav class="flex-nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+            </header>
     
-            </div>
-        <footer class="footerinfo">
-            <div class="grid_8">
-                <p>Posted by: Hege Refsnes</p>
-                <p>Contact information: <a href="mailto:someone@example.com">
-                someone@example.com</a>.</p>
-            </div>
-            <div class="grid_4">
-                    <p>Posted by: Hege Refsnes</p>
-                    <p>Contact information: <a href="mailto:someone@example.com">
-                    someone@example.com</a>.</p>
+            <div class="main">
+                <div class="box-one">
+                    <img class="colimg" src="img/college.jpg">
+                    <p>
+                           gvdfglor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh. Proin efficitur nisl felis, vitae finibus diam euismod nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                    <marquee>we congradulate our Anna University Rank Holders Achut , ramesh,kunal,raghu.</marquee>
                 </div>
-         </footer>
-    </div>
+                <div><h1>Latest News</h1></div>
+                <div class="flex-cont">
+                    
+                    <div class="box-two">
+                            <p>
+                                    <img class="news-img" src="img/exams.jpeg" />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh.  <button class="morebtn">More</button>
+                            </p>
+                    </div>
+                    <div class="box-three">
+                            <p>
+                                    <img class="news-img" src="img/Training.jpg" />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh.  <button class="morebtn">More</button>
+                            </p>
+                    </div>
+                    
+
+                    <div class="box-six">
+                                <p>
+                                   <!-- <img class="news-img" src="img/travel.jpg" />
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel scelerisque metus. Donec aliquam velit semper justo mattis, sed finibus lacus pulvinar. Nam porttitor augue ac molestie porttitor. Duis convallis consectetur dignissim. Nunc rhoncus consectetur lorem ut pulvinar.Cras ac tristique nibh. <button class="morebtn">More</button> -->
+
+                                        <h2>Quick Links</h2>
+                                        <ul>
+                                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">
+                                                        MAGAZINES AND ARTICLES</a></li>
+                                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">Invention & Technology   </a></li>
+                                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">Newsletter</a></li>
+                                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">Placement</a></li>
    
-</body>
+                                            </ul>
+
+                                </p>
+                    </div>
+                   
+                </div>
+                
+        
+                </div>
+                <footer class="footerinfo flex-footer">
+                        <div class="sc-details">
+                                <ul>
+                                        <li><a href="">Home</a></li>
+                                        <li><a href="">News</a></li>
+                                        <li><a href="">Departments</a></li>
+                                        <li><a href="">Placement</a></li>
+                                        <li><a href="">Facilities</a></li>
+                                        <li><a href="">Events</a></li>
+                                    </ul>
+                        </div>
+                        <div class="reachus">
+                            <div class="social-links">
+                                   <p><span><i class="fa fa-phone" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;<span>9898989898</span></p>
+                                   <p><span><i class="fa fa-home" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;<span>042-2315478</span></p>
+                                   <p><span><i class="fa fa-envelope" aria-hidden="true"></i>  </span>&nbsp;&nbsp;&nbsp;<span>abc@abc.com</span></p>
+                            </div> 
+                            <div class="social-links">
+                                    <span class="sc-text">Social </span> <span class="social-icons"></span> <span><i class="fab fa-twitter-square"></i></span><span><i class="fab fa-google-plus-square"></i></span><span><i class="fab fa-facebook-square"></i></span><span><i class="fas fa-share-square"></i></span>
+                            </div>
+                           
+                        </div>
+                        <div class="enq">
+                            <p class="enqbox"><label for="email">Email</label><span><input type="text" id="email" class="emailtxt"></span></p>
+                            <button class="enqbtn">Enquiry</button>
+
+                        </div>
+
+                </footer>
+            
+        </div>
+        
+    </body>
 </html>
