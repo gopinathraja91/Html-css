@@ -1,0 +1,213 @@
+    body {
+        font-family: 'Varela';font-size: 16px;
+        background: #f5f5f5;
+    }
+
+    .social-links{
+        margin-top:30px;        
+        color:white;    
+    }
+
+    .flex-nav ul{
+        list-style:none;
+        margin-right: 40px;
+        justify-content:flex-end;
+
+    }
+    .flex-nav li{
+        
+        margin-left: 40px;
+        
+    }
+
+    .flex-cont,.flex-nav ul,.flex-footer{
+        display:flex;
+        
+    }
+    .flex-cont div{
+
+        flex:1 1 30%;
+        padding: 3px;
+    }
+
+    .box-five{
+
+        flex:10;
+    }
+    .flex-footer div{
+
+        flex:1;
+    }
+    .fab,.fas{
+        font-size: 30px;   
+        margin-left:5px;     
+        }
+    .fab:hover,.fas:hover{
+        font-size:30px;  
+        color:#1f3de6;;
+    }
+    .social-icons{
+        margin-top:20px;        
+    }
+    .flex-nav ul a{
+
+        color:white;
+        text-decoration:none;
+    }
+    .flex-nav ul a:hover{
+        text-decoration:underline;
+        color:red;
+    }
+
+
+
+    .wrapper{
+        max-width:1000px;
+        margin:auto;
+    }
+    header{
+        background:#262a2d;
+        color:white;
+        border-radius:4px;
+        position: fixed;
+        top: 0;
+        width: 1000px;
+        overflow: hidden;
+            z-index: 99999999999;
+    }
+    .footerinfo{
+        height: auto;
+        background:#505050;
+        border-radius: 6px;
+    }
+
+    .colimg{
+        width: 100%;
+        height: 380px;
+    }
+    .enqbtn{
+            width: 200px;
+            height: 50px;
+            border-radius: 40px;
+            border: 1px solid grey;
+            position: relative;
+            top: 70px;
+    }
+
+    .sc-details ul,.box-six ul{
+
+        list-style: none;
+
+    }
+    .sc-details a{
+
+            color:white;    
+            text-decoration: none;
+    }
+    .sc-details a:hover{
+
+        color:red;    
+        text-decoration: underline;
+    }
+    .morebtn{
+        width: 80px;
+        height: 30px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 2px #d2d1d1;
+    }
+    .news-img{
+        width: 90%;
+        height: 130px;
+    }
+    .main{
+
+        margin-top:123px;
+    }
+    .enq .enqbox{
+        position: relative;
+        top: 60px;
+        padding-right: 10px;
+        margin-left: -30px;
+        color: white;
+    }
+    .enq .enqbox input{
+        margin-left: 10px;
+        height: 25px;
+    }
+    .box-six{
+        color: red;
+        text-shadow: 1px 2px 3px #656363;
+    }
+    .box-six li a{
+        margin-left:5px;
+    }
+    marquee{
+
+        color: red;
+        text-shadow: 1px 1px 2px #bdbbbb;
+        font-size: 18px;
+    }
+    .clientsdet h2{
+        text-align:center;
+    }
+    
+
+    @media all and (max-width:1000px){
+        .flex-nav ul,.flex-cont,.flex-footer{
+            flex-wrap:wrap;
+        }
+    
+        .flex-nav ul li{
+            flex:1 1 40%;       
+            } 
+        
+        .flex-cont div,.flex-footer div{
+            flex:1 1 40%;       
+            } 
+
+            header{
+
+                width:98%;
+        }
+        .enq .enqbox{
+            top: -10px;
+            margin-left: 10px;
+        }
+        .enqbtn{
+            top: -10px;
+            margin-left: 50px;
+        }
+
+    }
+    
+
+
+
+
+
+    @media all and (max-width:600px){
+        .flex-nav ul,.flex-cont,.flex-footer{
+            flex-wrap:wrap;
+        }
+    
+        .flex-nav ul li, .flex-cont div,.flex-footer div{
+            flex:1 1 100%;
+        } 
+        .footerinfo,.flex-nav{
+
+            text-align: center;
+        }
+        header{
+
+            width:97%;
+        }
+        .enq .enqbox{
+            top: 0px;
+            margin-left: 10px;
+        }
+        .enqbtn{
+            top: -10px;
+            margin-left: 50px;
+        }
+                    
+    }
