@@ -65,6 +65,10 @@
         max-width:1000px;
         margin:auto;
     }
+    .wrapper header a{
+        text-decoration: none;
+        color:white;
+    }
     header{
         background:#262a2d;
         color:white;
@@ -150,6 +154,9 @@
     .clientsdet h2{
         text-align:center;
     }
+    p{
+        text-indent:35px;
+    }
     
 
     @media all and (max-width:1000px){
@@ -175,7 +182,7 @@
         }
         .enqbtn{
             top: -10px;
-            margin-left: 50px;
+            margin-left: 80px;
         }
 
     }
@@ -207,7 +214,7 @@
         }
         .enqbtn{
             top: -10px;
-            margin-left: 50px;
+            margin-left: 80px;
         }
                     
     }
