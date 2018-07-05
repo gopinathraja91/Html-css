@@ -1,4 +1,6 @@
-    body {
+@import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Varela");
+   body {
         font-family: 'Varela';font-size: 16px;
         background: #f5f5f5;
     }
@@ -156,6 +158,14 @@
     }
     p{
         text-indent:35px;
+    }
+    
+    
+    
+    /* Make it move */
+    @keyframes marquee {
+        0%   { transform: translate(0, 0); }
+        100% { transform: translate(-100%, 0); }
     }
     
 
