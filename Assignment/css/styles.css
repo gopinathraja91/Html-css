@@ -42,7 +42,8 @@
 
         flex:1;
     }
-    .fab,.fas{
+    .fab,
+    .fas{
         font-size: 30px;   
         margin-left:5px;     
         }
